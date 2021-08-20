@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'Burlingame';
+	src: url("./resources/fonts/BurlingamePro-Condensed.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Burlingame-semiBold';
+	src: url("./resources/fonts/BurlingamePro-CondSemiBold.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Menlo';
+	src: url("./resources/fonts/Menlo-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Monaco';
+	src: url("./resources/fonts/Monaco.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Consolas';
+	src: url("./resources/fonts/Consolas.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'LiberationBold';
+	src: url("./resources/fonts/LiberationMono-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'LiberationRegular';
+	src: url("./resources/fonts/LiberationMono-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'LiberationBoldItalic';
+	src: url("./resources/fonts/LiberationMono-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'LiberationItalic';
+	src: url("./resources/fonts/LiberationMono-Italic.woff") format("woff");
+}
+
+
+//fonts
+$font_burlingame: 'Burlingame', Arial, Helvetica;
+$font_sans: sans-serif;
+$font_courier: Courier New;
+$font_monospace: monospace;
+$font_arial: Arial;
+$font_menlo: 'Menlo', Arial, Helvetica;
+$font_monaco: 'Monaco', Arial, Helvetica;
+$font_consolas: 'Consolas', Arial, Helvetica;
+$font_liberation_bold: 'LiberationBold', Arial, Helvetica;
+$font_liberation_bold_italic: 'LiberationRegular', Arial, Helvetica;
+$font_liberation_regular: 'LiberationBoldItalic', Arial, Helvetica;
+$font_liberation_italic: 'LiberationItalic', Arial, Helvetica;
