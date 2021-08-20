@@ -1,3 +1,7 @@
+# Frasers hospitality
+
+It is about building components and showcasing in storybook and integrate to sitecore.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
