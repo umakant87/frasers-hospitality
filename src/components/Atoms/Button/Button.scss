@@ -1,0 +1,29 @@
+.c-button {
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.c-button__primary {
+  color: map-get($colors, white);
+  background-color: map-get($colors, primary);
+}
+.c-button__secondary {
+  color: map-get($colors, gray);
+  background-color: transparent;
+  box-shadow: map-get($colors, black ) 0px 0px 0px 1px inset;
+}
+.c-button__small {
+  font-size: 12px;
+  padding: map-get($spacers, 4) map-get($spacers, 5);
+}
+.c-button__medium {
+  font-size: 14px;
+  padding: map-get($spacers, 4) map-get($spacers, 5);
+}
+.c-button__large {
+  font-size: 14px;
+  padding: map-get($spacers, 4) map-get($spacers, 5);
+}

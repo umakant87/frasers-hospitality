@@ -18,9 +18,11 @@ $colors: (
   success: #4caf50,
   info: #2196f3,
   warning: #ffc107,
-  danger: #ed1c24,
   light: #fafafa,
-  dark: #585858
+  dark: #585858,
+  black: #000000,
+  dark-bg: #313131,
+  opacity-button: rgba(230,231,232,.2),
 );
 
 // Paddings
@@ -33,5 +35,7 @@ $spacers: (
   4: ( $spacer * 0.5 ), //8px 
   5: ( $spacer * 0.75 ), //12px 
   6: ( $spacer * 1 ), //16px
-  7: ( $spacer * 1.5 ), //24px
+  7: ( $spacer * 1.125 ), //18px
+  8: ( $spacer * 1.25 ), //20px
+  9: ( $spacer * 1.5 ), //24px
 );

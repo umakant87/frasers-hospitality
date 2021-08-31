@@ -1,0 +1,76 @@
+.c-hero-composite {
+  position: relative;
+  background-color: map-get($colors, gray-dark);
+  padding: map-get($spacers, 8);
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+    &--normal {
+      flex-direction: row;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__image {
+      flex-basis: 48%;
+      height: auto;
+    }
+    &__content {
+      flex-basis: 48%;
+    }
+  }
+}
+.c-hero-composite__container--reverse {
+  .c-hero-composite__container__content {
+    margin-right: 4%;
+  }
+}
+
+.c-hero-composite__container--normal {
+  .c-hero-composite__container__content {
+    margin-left: 4%;
+  }
+
+  .c-email-subscription__description {
+    text-align: left;
+    p {
+      color: map-get($colors, white);
+      font-family: $font_burlingame !important;
+      font-size: 20px;
+    }
+  }
+
+  .c-form-input__input {
+    width: 94%;
+    font-size: 1rem;
+    padding: map-get($spacers, 5);
+  }
+
+  #agree {
+    width: 10px;
+    margin: 0 10px;
+    float: left;
+  }
+  .agree-text {
+    color: map-get($colors, white);
+    font-size: 12px;
+    font-family: $font_arial;
+  }
+  .btn-primary {
+    padding: map-get($spacers, 5) map-get($spacers, 9) map-get($spacers, 5) map-get($spacers, 9);
+    background-color: map-get($colors, primary);
+    border-radius: 5px;
+    color: map-get($colors, white);
+    border: none;
+  }
+}

@@ -1,5 +1,4 @@
 h1, h2, h3, h4, p{
     font-family: $font_liberation_bold;
     padding: map-get($spacers, 0);
-    color: map-get($colors, primary );
 }
