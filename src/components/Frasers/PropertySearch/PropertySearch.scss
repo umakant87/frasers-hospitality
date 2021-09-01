@@ -1,0 +1,50 @@
+.c-propertySearch {
+  background: url("https://www.fraserspropertyindustrial.com/-/media/Estates/AU/Northern-Region/Vantage-Yatala/Background-Images/find-your-place-section-bg.png");
+  padding: map-get($spacers, 9);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  &__fields {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-flow: row nowrap;
+    padding: 65px 0;
+  }
+  &__submit {
+    text-align: center;
+    background-color: map-get($colors, primary);
+  }
+  &__text {
+    display: flex;
+    flex-flow: column wrap;
+    p {
+      margin-bottom: 30px;
+      img {
+        width: 30px !important;
+        vertical-align: middle;
+      }
+    }
+    h1 {
+      color: map-get($colors, gray-dark);
+    }
+  }
+  .fields {
+    width: 100%;
+  }
+
+  .c-form-input {
+    margin-bottom: 0;
+  }
+  .c-form-select {
+    margin-bottom: 0;
+  }
+  .c-form-select__label {
+    display: none;
+  }
+  .c-form-input__input {
+    border: 1px solid map-get($colors, gray);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

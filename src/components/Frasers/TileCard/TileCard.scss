@@ -1,0 +1,75 @@
+.c-tiles-container {
+  display: flex;
+  justify-content: space-around;
+  &__content {
+    position: absolute;
+    top: 10%;
+    padding: map-get($spacers, 8);
+  }
+  &__number {
+    font-family: $font_burlingame;
+    font-size: 30px;
+    font-weight: bold;
+    color: map-get($colors, white);
+  }
+  &__title {
+    font-weight: 600;
+    color: map-get($colors, white);
+    font-size: 35px;
+    font-family: $font_arial;
+    margin-bottom: 15px;
+  }
+  &__description {
+    font-family: $font_arial;
+    color: map-get($colors, white);
+    margin-bottom: 25px;
+  }
+  &__subscription {
+    font-family: $font_arial;
+    color: map-get($colors, white);
+    border-radius: 3px;
+    padding: 14px 28px 14px 16px;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: map-get($colors, opacity-button);
+    &::after {
+      background: url("https://www.fraserspropertyindustrial.com/assets/images/chevron-right-red.svg");
+      content: "";
+      position: absolute;
+      top: 195px;
+      bottom: 0;
+      width: 4px;
+      height: 8px;
+      margin: auto;
+      margin-left: 4.8px;
+    }
+  }
+}
+.TileCard {
+  font-size: 14px;
+  justify-content: center;
+  cursor: pointer;
+  flex: 4;
+  padding: 15px;
+  &:hover {
+    .children {
+      transform: scale(1.1);
+    }
+    .c-button__primary {
+      background-color: map-get($colors, primary) !important;
+      &::after {
+        background: url("https://www.fraserspropertyindustrial.com/assets/images/chevron-right-white.svg");
+      }
+    }
+    &__content {
+      padding: map-get($spacers, 4);
+    }
+  }
+  .children {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+    height: 450px;
+  }
+}

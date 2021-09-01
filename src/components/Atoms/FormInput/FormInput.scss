@@ -1,0 +1,25 @@
+.c-form-input {
+  position: relative;
+  margin-bottom: 1rem;
+  &__label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    padding: map-get($spacers, 4) map-get($spacers, 5);
+    font-size: 14px;
+    line-height: 1.5;
+    color: map-get($colors, gray-dark);
+    background-color: map-get($colors, white);
+    background-clip: padding-box;
+    border: 1px solid map-get($colors, light);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:disabled,
+    &:read-only {
+      background-color: map-get($colors, gray-dark);
+    }
+  }
+}

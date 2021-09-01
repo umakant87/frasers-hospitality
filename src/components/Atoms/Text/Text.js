@@ -15,7 +15,7 @@ const Text = ({ value, ...props }) => {
     return <h4 {...props}>{value}</h4>;
   }
   if (props.type === "p") {
-    return <p {...props}>{value}</p>;
+    return <p {...props} dangerouslySetInnerHTML={{__html: value}}></p>;
   }
   if (props.type === "span") {
     return <span {...props}>{value}</span>;

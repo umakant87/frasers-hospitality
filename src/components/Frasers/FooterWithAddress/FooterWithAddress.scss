@@ -1,0 +1,124 @@
+p {
+  font-family: $font_arial;
+}
+.c-footer-address {
+  padding: map-get($spacers, 4);
+  margin: 0;
+  background-color: map-get($colors, dark-bg);
+  border: 1px map-get($colors, gray-dark) solid;
+  h4 {
+    font-size: 1rem;
+    font-family: $font_arial;
+    color: map-get($colors, gray);
+    &:hover {
+      color: map-get($colors, gray);
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 map-get($spacers, 4) map-get($spacers, 8) map-get($spacers, 4);
+    // border-bottom: map-get($colors, gray-dark) 1px solid;
+    & h2 {
+      font-size: 18px;
+      color: map-get($colors, light);
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 5px;
+  }
+  &__item {
+    font-size: 16px;
+    margin-bottom: 10px;
+    & a {
+      color: map-get($colors, gray);
+      text-decoration: none;
+      font-family: $font_arial;
+      &:hover {
+        color: map-get($colors, white);
+      }
+    }
+  }
+  &__footer-about {
+    flex: 6 !important;
+    h2 {
+      font-family: $font_burlingame;
+    }
+    p {
+      font-size: 0.75rem;
+      font-family: $font_arial;
+    }
+    color: map-get($colors, gray);
+  }
+  &__footer-links {
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+  &__footer-address {
+    color: map-get($colors, white);
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+    & i {
+      margin-right: 5px;
+    }
+    & p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  }
+  &__social-account {
+    margin-bottom: 20px;
+    border: 0 !important;
+    margin-right: 0 !important;
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    p {
+      color: map-get($colors, gray);
+      margin-top: 30px;
+    }
+  }
+  &__copyright {
+    padding: map-get($spacers, 4) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: map-get($colors, light);
+    font-size: 12px;
+    & p {
+      margin: 0;
+    }
+  }
+  .section {
+    flex: 2;
+    margin: 0 5px;
+    border-right: 1px map-get($colors, gray-dark) solid;
+  }
+}
