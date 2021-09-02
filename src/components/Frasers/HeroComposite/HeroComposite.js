@@ -20,6 +20,7 @@ const HeroComposite = ({ image, title, description, cta, orientation }) => {
             buttonLabel="subscribe"
             placeholderText="Name*"
             subscriptionText="Stay up-to-date with the latest estate news"
+            subscriptionHeader="NEWSLETTER"
           />
         </div>
       </div>

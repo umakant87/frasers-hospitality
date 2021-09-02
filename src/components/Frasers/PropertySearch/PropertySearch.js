@@ -17,7 +17,7 @@ const PropertySearch = () => {
 				<div className="c-propertySearch__container">
 					<div className="c-propertySearch__text">
 						<div>
-							<p><img src="./assets/images/FPI-Property---Search.png" /> Property Search</p>
+							<p><img src="./assets/images/FPI-Property---Search.png" /> <span> Property Search</span></p>
 						</div>
 						<Text type="h1" value="Make it or move it. We'll find your match." />
 					</div>

@@ -11,9 +11,28 @@
     flex-flow: row nowrap;
     padding: 65px 0;
   }
+  &__country {
+    select {
+      border-radius: 6px 0 0 6px;
+    }
+  }
+  &__property {
+    select {
+      border-radius: 0px;
+    }
+  }
+  &__keyword {
+    input {
+      border-radius: 0px;
+    }
+  }
   &__submit {
     text-align: center;
     background-color: map-get($colors, primary);
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
   &__text {
     display: flex;
@@ -24,9 +43,15 @@
         width: 30px !important;
         vertical-align: middle;
       }
+      span {
+        color: map-get($colors, red);
+        font-weight: bold;
+        padding-left: 7px;
+      }
     }
     h1 {
       color: map-get($colors, gray-dark);
+      max-width: 55%;
     }
   }
   .fields {
@@ -38,6 +63,25 @@
   }
   .c-form-select {
     margin-bottom: 0;
+    select {
+      height: 50px;
+      border: none !important;
+      box-shadow: none;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  .c-form-input {
+    margin-bottom: 0;
+    input {
+      height: 34px;
+      border: none !important;
+      box-shadow: none;
+      &:focus-visible {
+        outline: none;
+      }
+    }
   }
   .c-form-select__label {
     display: none;
