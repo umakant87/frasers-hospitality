@@ -3,8 +3,13 @@
   justify-content: space-around;
   &__content {
     position: absolute;
-    top: 10%;
-    padding: map-get($spacers, 8);
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 380px;
+    width: 27%;
+    padding: 30px 40px;
   }
   &__number {
     font-family: $font_burlingame;
@@ -32,16 +37,19 @@
     font-weight: normal;
     font-size: 12px;
     background-color: map-get($colors, opacity-button);
+    width: auto;
+    position: absolute;
+    bottom: 0px;
     &::after {
       background: url("https://www.fraserspropertyindustrial.com/assets/images/chevron-right-red.svg");
       content: "";
       position: absolute;
-      top: 195px;
+      top: 0px;
       bottom: 0;
       width: 4px;
       height: 8px;
       margin: auto;
-      margin-left: 4.8px;
+      margin-left: 9.8px;
     }
   }
 }
@@ -50,7 +58,8 @@
   justify-content: center;
   cursor: pointer;
   flex: 4;
-  padding: 15px;
+  overflow: hidden;
+  margin: 15px;
   &:hover {
     .children {
       transform: scale(1.1);
