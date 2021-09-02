@@ -2,17 +2,25 @@ p {
   font-family: $font_arial;
 }
 .c-footer-address {
-  padding: map-get($spacers, 4);
+  padding: map-get($spacers, 9) map-get($spacers, 4);
   margin: 0;
   background-color: map-get($colors, dark-bg);
   border: 1px map-get($colors, gray-dark) solid;
   h4 {
     font-size: 1rem;
     font-family: $font_arial;
-    color: map-get($colors, gray);
+    color: map-get($colors, white);
     &:hover {
-      color: map-get($colors, gray);
+      color: map-get($colors, white);
     }
+  }
+  p{
+    color: map-get($colors, gray);
+  }
+  & h2 {
+    font-size: 24px;
+    color: map-get($colors, light);
+    padding: 0px 12px;
   }
   &__container {
     display: flex;
@@ -46,13 +54,15 @@ p {
     }
   }
   &__footer-about {
-    flex: 6 !important;
+    flex: 4 !important;
+    padding-left: 0px !important;
     h2 {
       font-family: $font_burlingame;
     }
     p {
       font-size: 0.75rem;
       font-family: $font_arial;
+      color: map-get($colors, white );
     }
     color: map-get($colors, gray);
   }
@@ -92,6 +102,7 @@ p {
   }
   &__social-account {
     margin-bottom: 20px;
+    padding-right: 0px !important;
     border: 0 !important;
     margin-right: 0 !important;
     @media (max-width: 480px) {
@@ -120,5 +131,6 @@ p {
     flex: 2;
     margin: 0 5px;
     border-right: 1px map-get($colors, gray-dark) solid;
+    padding: 0px 10px;
   }
 }

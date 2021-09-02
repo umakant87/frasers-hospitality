@@ -1,8 +1,8 @@
-import React from "react";
-import "./FooterWithAddress.scss";
-import SocialAccount from "../../Molecules/SocialAccount/SocialAccount";
-import Link from "../../Atoms/Link/Link";
-import Text from "../../Atoms/Text/Text";
+import React from 'react'
+import './FooterWithAddress.scss'
+import SocialAccount from '../../Molecules/SocialAccount/SocialAccount'
+import Link from '../../Atoms/Link/Link'
+import Text from '../../Atoms/Text/Text'
 
 const FooterWithAddress = ({
   links,
@@ -15,10 +15,15 @@ const FooterWithAddress = ({
 }) => {
   return (
     <div className="c-footer-address">
+      <div className="d-flex col-12">
+        <Text type="h2" value="Frasers Property Industrial" />
+      </div>
       <div className="c-footer-address__container">
         <div className="c-footer-address__footer-about section">
-          <Text type="h2" value="Frasers Property Industrial" />
-          <Text type="p" value="Frasers Property Industrial acknowledges the Traditional Custodians of the land which our business operates on in Australia. We pay our respects to Aboriginal and Torres Strait Islanders Elders’ past, present and future." />
+          <Text
+            type="p"
+            value="Frasers Property Industrial acknowledges the Traditional Custodians of the land which our business operates on in Australia. We pay our respects to Aboriginal and Torres Strait Islanders Elders’ past, present and future."
+          />
         </div>
 
         <div className="c-footer-address__footer-address  section">
@@ -49,7 +54,7 @@ const FooterWithAddress = ({
                       {link.title}
                     </Link>
                   </li>
-                );
+                )
               })}
           </ul>
         </div>
@@ -58,19 +63,19 @@ const FooterWithAddress = ({
           <SocialAccount
             socialmenus={[
               {
-                label: "Twitter",
-                service: "twitter",
-                url: "https://twitter.com",
+                label: 'Twitter',
+                service: 'twitter',
+                url: 'https://twitter.com',
               },
               {
-                label: "Youtube",
-                service: "youtube",
-                url: "https://www.youtube.com/",
+                label: 'Youtube',
+                service: 'youtube',
+                url: 'https://www.youtube.com/',
               },
               {
-                label: "LinkedIn",
-                service: "linkedin",
-                url: "https://www.linkedin.com/",
+                label: 'LinkedIn',
+                service: 'linkedin',
+                url: 'https://www.linkedin.com/',
               },
             ]}
           />
@@ -78,7 +83,7 @@ const FooterWithAddress = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FooterWithAddress;
+export default FooterWithAddress

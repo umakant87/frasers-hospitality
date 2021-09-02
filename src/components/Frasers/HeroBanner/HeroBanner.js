@@ -25,7 +25,7 @@ export const HeroBanner = (props) => {
           <div className="c-hero-banner__container__content__description">
             <Text type="h4" value={description} />
           </div>
-          <div>
+          <div className="c-hero-banner__container__content__watchVideo">
             <Video
               popUp
               videoId="nW9piCiWPZU"
