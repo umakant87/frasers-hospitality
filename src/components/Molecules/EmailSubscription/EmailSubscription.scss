@@ -1,10 +1,54 @@
 .c-email-subscription {
     position: relative;
+    background-color: map-get($colors, gray1);
     &__description {
-        text-align: center;
         margin-top: auto;
     }
     &__signup {
         margin-bottom: auto;
     }
 }
+
+
+.c-email-subscription__description {
+    text-align: left;
+    p {
+      color: map-get($colors, dark);
+      font-family: $font_burlingame !important;
+      font-size: 20px;
+    }
+    h4 {
+      color: map-get($colors, red);
+      font-weight: bold;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.125rem;
+    }
+  }
+
+  .c-form-input__input {
+    width: 94%;
+    font-size: 1rem;
+    padding: map-get($spacers, 5);
+    background: map-get($colors, dark);
+    color: map-get($colors, gray1); ;
+  }
+
+  #agree {
+    width: 10px;
+    margin: 0 10px;
+    float: left;
+  }
+  .agree-text {
+    color: map-get($colors, white);
+    font-size: 12px;
+    font-family: $font_arial;
+    line-height: 18px;
+  }
+  .btn-primary {
+    padding: map-get($spacers, 5) map-get($spacers, 9) map-get($spacers, 5) map-get($spacers, 9);
+    background-color: map-get($colors, primary);
+    border-radius: 5px;
+    color: map-get($colors, white);
+    border: none;
+  }

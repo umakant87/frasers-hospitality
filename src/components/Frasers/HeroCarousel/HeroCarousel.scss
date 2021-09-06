@@ -1,6 +1,7 @@
 .c-slidecontainer {
   text-align: center;
   font-size: 12px;
+  overflow: hidden;
   &__slider {
     position: relative;
     &__show {
@@ -11,7 +12,7 @@
       display: none;
     }
     &__slide {
-      & img{
+      & img {
         height: 400px;
         cursor: grab;
       }
@@ -60,19 +61,41 @@
     }
     &__dot {
       cursor: pointer;
-      width: 15px;
+      padding-top: 20px;
+      width: 112px;
       height: 15px;
+      text-align: left;
       display: inline-block;
-      padding: 0 16px 16px 0;
+      padding-bottom: 20px;
       border-bottom: 1px solid map-get($colors, gray);
       font-size: 0.75rem;
       font-family: $font_sans;
       color: map-get($colors, gray);
-      &:hover{
+      &:hover {
         color: map-get($colors, red);
         border-bottom: 1px solid map-get($colors, red);
         transition: border 1s ease-in-out;
       }
     }
+  }
+}
+
+.fade {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slide;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }

@@ -1,9 +1,9 @@
 .c-form-input {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: map-get($spacers, 6);
   &__label {
     display: inline-block;
-    margin-bottom: 0.5rem;
+    margin-bottom: map-get($spacers, 4);
   }
   &__input {
     display: block;
@@ -15,7 +15,7 @@
     background-color: map-get($colors, white);
     background-clip: padding-box;
     border: 1px solid map-get($colors, light);
-    border-radius: 0.25rem;
+    border-radius: map-get($spacers, 2);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     &:disabled,
     &:read-only {
