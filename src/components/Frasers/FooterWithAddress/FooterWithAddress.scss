@@ -3,11 +3,11 @@ p {
 }
 .c-footer-address {
   padding: map-get($spacers, 9) map-get($spacers, 4);
-  margin: 0;
+  margin: map-get($spacers, 0);
   background-color: map-get($colors, dark-bg);
   border: 1px map-get($colors, gray-dark) solid;
   h4 {
-    font-size: 1rem;
+    font-size: map-get($spacers, 6);
     font-family: $font_arial;
     color: map-get($colors, white);
     &:hover {
@@ -20,7 +20,7 @@ p {
   & h2 {
     font-size: 24px;
     color: map-get($colors, light);
-    padding: 0px 12px;
+    padding: map-get($spacers, 0) map-get($spacers, 5);
   }
   &__container {
     display: flex;
@@ -38,12 +38,12 @@ p {
   }
   &__list {
     list-style: none;
-    padding: 0;
+    padding: map-get($spacers, 0);
     margin-left: 5px;
   }
   &__item {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: map-get($spacers, 5);
     & a {
       color: map-get($colors, gray);
       text-decoration: none;
@@ -55,12 +55,12 @@ p {
   }
   &__footer-about {
     flex: 4 !important;
-    padding-left: 0px !important;
+    padding-left: map-get($spacers, 0) !important;
     h2 {
       font-family: $font_burlingame;
     }
     p {
-      font-size: 0.75rem;
+      font-size: map-get($spacers, 5);
       font-family: $font_arial;
       color: map-get($colors, white );
     }

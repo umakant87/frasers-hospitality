@@ -55,7 +55,7 @@ const HeroCarousel = ({ slides, showCaption, captionAlignment }) => {
             <div
               key={index}
               className={[
-                "c-slidecontainer__slider__slide",
+                "c-slidecontainer__slider__slide fade",
                 currSlide === index + 1
                   ? "c-slidecontainer__slider__show"
                   : "c-slidecontainer__slider__hide",
