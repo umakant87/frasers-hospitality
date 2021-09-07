@@ -1,6 +1,7 @@
 .c-email-subscription {
     position: relative;
     background-color: map-get($colors, gray1);
+    padding: map-get($spacers, 9);
     &__description {
         margin-top: auto;
     }
@@ -31,7 +32,10 @@
     font-size: 1rem;
     padding: map-get($spacers, 5);
     background: map-get($colors, dark);
-    color: map-get($colors, gray1); ;
+    color: map-get($colors, white); 
+    &::placeholder {
+      color: map-get($colors, white);
+    }
   }
 
   #agree {
